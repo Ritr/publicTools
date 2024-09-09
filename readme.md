@@ -6,7 +6,6 @@ wx，qq:337634268
 
 选择扶贫方式
 
-![微信扶贫](https://s2.loli.net/2024/09/09/1RsvOCorWqM8g2m.jpg)
 
-![支付宝扶贫](https://s2.loli.net/2024/09/09/knvDX3Aiq571Cc4.jpg)
-
+![微信图片_20240909144440.jpg](https://s2.loli.net/2024/09/09/ToYAqPdBZv4wcCb.jpg)
+![微信图片_20240909150525.jpg](https://s2.loli.net/2024/09/09/KMlPwzpikdyLBof.jpg)
