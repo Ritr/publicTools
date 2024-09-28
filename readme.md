@@ -15,8 +15,7 @@
 
 wx，qq:337634268
 
-欢迎关注我的头条 https://www.toutiao.com/c/user/token/MS4wLjABAAAA0452wvZ6KsR5nFfE8kymNI_GuCQxg1nrTYyDR8-mbOd7B4u6h3BaOPuQ09BQceif/
-
+N站：飞行员托洛夫斯基
 选择扶贫方式
 
 
