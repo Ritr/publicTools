@@ -2,13 +2,20 @@
 ; Requires Gdip.ahk either in your Lib folder as standard library or using #Include
 ;
 ; Tutorial to pixelate a bitmap using machine code
-
+TrayTip("一键马赛克 | 作者:337634268(接定制脚本、web开发)")
 #SingleInstance Force
 ;#NoEnv
 ;SetBatchLines -1
 
 ; Uncomment if Gdip.ahk is not in your standard library
 #Include ..\plugin\Gdip_All.ahk
+v := 100
+f := true
+; myGui := Gui()
+; myGui.OnEvent('Close', (*) => ExitApp())
+; myGui.Title := "一键马赛克 | 作者:337634268(接定制脚本、web开发)"
+
+; myGui.Show("w400 h40")
 
 ; Start gdi+
 If !pToken := Gdip_Startup()
@@ -50,13 +57,12 @@ UpdateLayeredWindow(hwnd1, hdc, (A_ScreenWidth - Width) // 2, (A_ScreenHeight - 
 return
 
 ;#######################################################################
-
 Update()
 {
     global
 Update:
 
-    global v := 100
+
     static dir := 0
     ; Some simple checks to see if we are increasing or decreasing the pixelation
     ; v is the block size of the pixelation and dir is the direction (inc/decreasing)
@@ -103,12 +109,10 @@ ExitFunc(ExitReason, ExitCode)
     Gdip_DeleteGraphics(G)
     Gdip_Shutdown(pToken)
 }
-
 MButton::
 {
-    global hwnd1, pBitmap, pBitmapOut, G, hdc, Width, Height
-
-    static f := true
+    ; global hwnd1, pBitmap, pBitmapOut, G, hdc, Width, Height
+    global f
     if f
     {
         ; 重新截图
@@ -123,7 +127,26 @@ MButton::
     } else {
         Gui1.Hide()
     }
-
     f := !f
 
+}
+#HotIf !f
+WheelDown:: {
+    global v
+    v += 10
+    if(v >= 200){
+        v := 200
+    }
+    Update()
+}
+
+
+#HotIf !f
+WheelUp:: {
+    global v
+    v -= 10
+    if(v <= 3){
+        v := 3
+    }
+    Update()
 }
