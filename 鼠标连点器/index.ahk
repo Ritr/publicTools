@@ -1,18 +1,20 @@
 LianDian() {
-    loop 10 {
+    loop {
         MouseClick()
-        Sleep(500)
+        Sleep(50)
     }
 }
 
-^k:: {
+#k:: {
     LianDian()
 }
 
-^z::{
+#s:: {
+    ExitApp()
+}
+#a:: {
     Pause(1)
 }
-
-^c::{
+#d:: {
     Pause(0)
 }

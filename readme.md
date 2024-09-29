@@ -21,3 +21,12 @@ B站：飞行员托洛夫斯基
 
 ![微信图片_20240909144440.jpg](https://s2.loli.net/2024/09/09/ToYAqPdBZv4wcCb.jpg)
 ![微信图片_20240909150525.jpg](https://s2.loli.net/2024/09/09/KMlPwzpikdyLBof.jpg)
+
+
+ul2 =  $("[href='"+item.url+"]").parent().parent().parent().parent();
+if(ul.hasClass("lev-2") || ul.hasClass("lev-3")){
+    ul.show();
+}
+if(ul2.hasClass("lev-2")){
+    ul2.show();
+}

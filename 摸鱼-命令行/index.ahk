@@ -10,7 +10,6 @@
 ;     return web.ResponseText
 ; }
 C() {
-    global f := 1
     Run("cmd")
     Sleep(500)
     Send("{F11}")
@@ -85,5 +84,5 @@ C() {
 }
 
 #s:: {
-    Reload()
+    ExitApp()
 }
