@@ -1,0 +1,1 @@
+tg blum自动点击工具。执行exe后，打开blum，点击play后，按win + k开始，win + j 结束并退出
