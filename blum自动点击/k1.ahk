@@ -1,7 +1,7 @@
 ; #d6e631
 ; 50,600 #fff
 #Include ..\plugin\ImagePut.ahk
-TrayTip("作者:337634268(接定制脚本、web开发)")
+TrayTip("telegram:@ritr")
 #k:: {
     Start()
 }
